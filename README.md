@@ -14,7 +14,7 @@ O Sistema de Gestão Energética - Universidade de Brasília (SIGE-UnB), consist
 |    Lucas Martins    |  lucasamartins465@gmail.com  |  @lucasmartins |
 | Renato Britto Araujo | renatobritto@protonmail.com | @renatoba |
 |    Renato Coral     | renatocoral@unb.br | @renatocoral |
-|    Rodrigo Maia     |  | @rodmaia |
+|    Rodrigo Maia     | contato@rodmaia.com.br | @rodmaia |
 |   Thalisson Melo    |   tallisonmelo@hotmail.com   | @thalissonmelo |
 
 ## Como subir 
