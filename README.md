@@ -2,6 +2,14 @@
 ## Sobre o Projeto
 O Sistema de Gestão Energética - Universidade de Brasília (SIGE-UnB), consiste em uma aplicação web desenvolvida para auxiliar o monitoramento e gestão das instalações elétricas das edificações dos campi da Universidade de Brasília. A ideia visa que cada Campus contido na UnB possa ser capaz de utilizar a ferramenta e ter um maior conhecimento de como está o consumo de seus insumos importantes ao longo do tempo, possibilitando, assim, elaborar possíveis estratégias que auxiliem em sua economia.
 
+### Coordenação do Projeto
+|        Membro       |            E-mail            |     GitLab     |
+|:-------------------:|:----------------------------:|:--------------:| 
+|      Loana Velasco     |     loana@unb.br     |   -   |
+|      Alex Reis     |     alexreis@unb.br     |   @REIALEX   |
+|    Renato Coral     | renatocoral@unb.br | @renatocoral |
+
+
 ### Equipe
 |        Membro       |            E-mail            |     GitLab     |
 |:-------------------:|:----------------------------:|:--------------:| 
@@ -13,7 +21,6 @@ O Sistema de Gestão Energética - Universidade de Brasília (SIGE-UnB), consist
 |  Guilherme Augusto  | guilherme.francais@gmail.com |  @guiaugusto   |
 |    Lucas Martins    |  lucasamartins465@gmail.com  |  @lucasmartins |
 | Renato Britto Araujo | renatobritto@protonmail.com | @renatoba |
-|    Renato Coral     | renatocoral@unb.br | @renatocoral |
 |    Rodrigo Maia     | contato@rodmaia.com.br | @rodmaia |
 |   Thalisson Melo    |   tallisonmelo@hotmail.com   | @thalissonmelo |
 
