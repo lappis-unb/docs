@@ -1,6 +1,14 @@
 # SIGE - Sistema de Gestão Energética 
-## Sobre o Projeto
+
+## O que é o SIGE?
 O Sistema de Gestão Energética - Universidade de Brasília (SIGE-UnB), consiste em uma aplicação web desenvolvida para auxiliar o monitoramento e gestão das instalações elétricas das edificações dos campi da Universidade de Brasília. A ideia visa que cada Campus contido na UnB possa ser capaz de utilizar a ferramenta e ter um maior conhecimento de como está o consumo de seus insumos importantes ao longo do tempo, possibilitando, assim, elaborar possíveis estratégias que auxiliem em sua economia.
+
+## Qual problema o SIGE se propõe a resolver?
+
+Atualmente, a UnB e outras instituições de ensino superior do país somente possuem o medidor geral de consumo de energia e, portanto, impedem qualquer avaliação localizada. Ou seja, os gestores desses orgãos públicos não possuem dados sobre a qualidade energética de prédios específicos, linhas de transmissão, faculdades, etc. Essa carência de dados impede a prática de manutenções preventivas e ações remediativas, o que por usa vez acarreta em danos materiais (danificação de infraestrutura, equipamentos queimandos, etc). 
+
+O SIGE se propõe a coletar dados sobre a qualidade energética de diversos locais da infraestrutura de rede, para assim possibilitar a caracterização de perfis de consumo de cada edifício, aplicação de metodologias de gestão de consumo individualizada, melhorias na continuidade do fornecimento de energia da rede interna da UnB, além de definição de metas de redução de consumo e demanda, por unidade acadêmica.
+
 
 ### Coordenação do Projeto
 |        Membro       |            E-mail            |     GitLab     |
