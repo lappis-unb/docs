@@ -1,0 +1,20 @@
+image: ruby:alpine
+
+stages:
+- deploy
+
+pages:
+  stage: deploy
+  script:
+  - mkdir .public
+  - cp -r * .public
+  - mv .public public
+  - echo "deploying to pages for production"
+  environment:
+    name: production
+    # url:
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
