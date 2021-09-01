@@ -9,6 +9,53 @@ Atualmente, a UnB e outras instituições de ensino superior do país somente po
 
 O SIGE se propõe a coletar dados sobre a qualidade energética de diversos locais da infraestrutura de rede, para assim possibilitar a caracterização de perfis de consumo de cada edifício, aplicação de metodologias de gestão de consumo individualizada, melhorias na continuidade do fornecimento de energia da rede interna da UnB, além de definição de metas de redução de consumo e demanda, por unidade acadêmica.
 
+## Arquitetura
+A arquitetura do SIGE é composta por 4 camadas. Dois serviços de backend e dois de frontend conforme a imagem abaixo.
+![Arquitetura](assets/images/arquitetura_desenho.png)
+
+### Tecnologias do Projeto
+- [VueJS](https://vuejs.org/) - Usado na implementação do frontend do projeto
+- [Django REST](https://www.django-rest-framework.org/) - Usado para implementar as APIs master e slave
+- [PostgreSQL](https://www.postgresql.org/) - Utilizado para o Banco de Dados do master e slave
+
+### Servidor de Coleta de dados (sige-slave)
+
+O **Servidor de Coleta de Dados** é a camada responsável por coletar periodicamente os dados dos medidores de energia (tensão, corrente, consumo e geração de energia, potência ativa/reativa/total, dentre outros) e disponibilizá-los ao *Servidor Central* através de uma API-REST. A arquitetura do SIGE permite o uso de um ou mais servidores de coleta distribuídos para assegurar a coleta de dados em caso de falhas de conexão entre os campi da universidade.   
+
+As conexões com os *medidores* são realizadas periodicamente:
+
+- **Minutely** - A cada minuto
+- **Quarterly** - A cada 15 minutos
+- **Monthly** - Mensalmente
+
+Para saber mais sobre este módulo acesse [Slave](./slave/home)
+
+#### Medidores (Transducers)
+
+Os *medidores de energia* utilizados no projeto são multimedidores de mercado com protocolo aberto que medem as grandezas elétricas essenciais em sistemas de gestão de energia. Dentre os protocolos de comunicação usados estão o Modbus RTU / Modbus TCP conectados via Ethernet.
+
+![Medidores de Energia](assets/images/medidores.png)
+
+Para saber mais sobre os Medidores acesse [Medidores](./medidores/home)  
+
+### Servidor Central (sige-master)
+O **Servidor Central** é a camada do sistema que concentra os dados de medidas de todos os *Servidores de Coleta* e fornece os dados coletados para o frontend através de uma API-REST. Seus dados são coletados a por conexões periódicas com o *Servidor de Coletas*.
+
+As conexões do *Servidor Central* com os *Servidores de Coleta* são realizadas periodicamente:
+- A cada 1 minuto para atualizar o resumo de medidas e eventos;
+- A cada 1 hora para realizar a copia de todos os dados coletados dos medidores.
+
+Para saber mais sobre este módulo acesse [Master](./master/home)  
+
+### Interface Gráfica WEB (sige-front)
+Apresenta dashboards para analisar os dados coletados pelos transdutores. Os dados do frontend são coletados a partir do *Servidor Central*.
+
+Para saber mais sobre este módulo acesse [FrontEnd](./frontend/home)
+
+### App Mobile - WPA (sige-mobile)
+O App mobile é a versão de frontend desenvolvida para o acesso rápido aos eventos (ocorrências), estado dos medidores e envio de notificações. Os dados do frontend são coletados a partir do *Servidor Central*.
+
+Para saber mais sobre este módulo acesse [Mobile](./mobile/home)
 
 ### Coordenação do Projeto
 |        Membro       |            E-mail            |     GitLab     |
@@ -16,7 +63,6 @@ O SIGE se propõe a coletar dados sobre a qualidade energética de diversos loca
 |      Loana Velasco     |     loana@unb.br     |   -   |
 |      Alex Reis     |     alexreis@unb.br     |   @REIALEX   |
 |    Renato Coral     | renatocoral@unb.br | @renatocoral |
-
 
 ### Equipe
 |        Membro       |            E-mail            |     GitLab     |
@@ -47,44 +93,6 @@ E suba o ambiente que preferir com:
 docker-compose up
 ```
 Para ter a conexão do master com o slave é necessário cadastra-lo, para isso siga o seguinte [tutorial](./tutoriais/como-cadastrar-transdutor).
-
-## Arquitetura
-- **TODO: imagem da arquitetura representando cada serviço e suas conexões**
-
-### Tecnologias do Projeto
-- [VueJS](https://vuejs.org/) - Usado na implementação do frontend do projeto
-- [Django REST](https://www.django-rest-framework.org/) - Usado para implementar as APIs master e slave
-- [PostgreSQL](https://www.postgresql.org/) - Utilizado para o Banco de Dados do master e slave
-
-### Front
-Apresenta dashboards para analisar os dados coletados pelos transdutores. Os dados do frontend são coletados a partir do master.
-
-Para saber mais sobre este módulo acesse [FrontEnd](./frontend/home)
-
-### Master
-O master fornece os dados coletados para o frontend. Seus dados são coletados a por conexões periódicas com o slave.
-
-As conexões com o slave são feitas nos tempos:
-- **TODO: especificar os tempos que o master conecta com o slave**
-
-Para saber mais sobre este módulo acesse [Master](./master/home)  
-### Slave
-O slave fornece os dados coletados para o master. Seus dados são coletados a partir de conexões periódicas com os Transdutores.
-
-As conexões com os Transdutores são feitas nos tempos:
-
-- **Minutely** - A cada minuto
-- **Quarterly** - A cada 15 minutos
-- **Monthly** - Mensalmente
-
-Para saber mais sobre este módulo acesse [Slave](./slave/home)  
-### Transdutores
-
-![TR4020](./img/tr4020.jpeg)
-
-O transdutor foi projetado para medir grandezas elétricas essenciais em sistemas de gestão de energia. é uma poderosa ferramenta para coletas de dados, que está integrado nesse sistema de gestão de energia.
-
-Para saber mais sobre os Transdutores acesse [Transdutores](./transdutores/home)  
 
 ## Tutoriais
 - [Como cadastrar um Transdutor e um Slave](./tutoriais/como-cadastrar-transdutor)
