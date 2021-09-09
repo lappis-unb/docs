@@ -16,11 +16,15 @@ A imagem abaixo mostra a estrutura de pastas do projeto:
 
 Para mais informações relacionadas a o framework Vue.js segue o link da sua [documentação](https://vuejs.org/v2/guide/).
 
-## 3. Guia de estilo
+## 3. Quasar
+
+Segundo o [wikipedia - quasar](https://en.wikipedia.org/wiki/Quasar_framework) Quasar é um framework de open source que tem como base Vue.JS que é utilizado para a construção de aplicativos, com uma única base de código, e ainda assim permite implantar na Web algumas tecnologias como SPA, PWA, SSR, para um aplicativo móvel, para este projete é utilizado o PWA.
+
+## 4. Guia de estilo
 
 O guia de estilo visual permite a unidade manter a coerência visual na apresentação de uma marca e dentro da sua oferta de serviços dentro do cenário digital.
 
-### 3.1 Objetivo
+### 4.1 Objetivo
 
 Esse tópico tem como foco demonstrar os elementos de interfaces, garantindo que exista um serviço digital consistente, independente do seu alcance ou número de páginas.
 
@@ -28,11 +32,11 @@ Independente da situação, o guia de estilo deve agir como a âncora de confian
 
 Alem disso também tem a função de facilitar o trabalho dos desenvolvedores front-end: quando eles podem utilizar componentes comuns em diversas páginas, sem precisar criar soluções do zero a todo momento, o desenvolvimento adquire bastante velocidade
 
-### 3.2 Cores
+### 4.2 Cores
 
 Esta paleta inclui as cores primárias e secundárias do Sige. As cores base são utilizadas para manter a consistência.
 
-### 3.3 Cor primária
+### 4.3 Cor primária
 
 As cores primárias são branco e azul na tonalidade informada na abaixo, que reflete as cores da UnB.
 
@@ -43,7 +47,7 @@ As cores primárias são branco e azul na tonalidade informada na abaixo, que re
 ![Primary color](./images/prim_color.png)
 
 
-### 3.4 Cor secundária
+### 4.4 Cor secundária
 
 |Hexadecimal|RGB|Nome|
 |-|-|-|
@@ -51,14 +55,14 @@ As cores primárias são branco e azul na tonalidade informada na abaixo, que re
 
 ![Secondary color](./images/sec_color.png)
 
-### 3.5 Contraste
+### 4.5 Contraste
 
 Estas cores demonstram otimo contraste, além de possuir uma nota ótima em acessibilidade.
 
 ![Contrast color](./images/contraste.png)
 
 
-### 3.6 Marca
+### 4.6 Marca
 
 ![Logo](./images/logo.png)
 
