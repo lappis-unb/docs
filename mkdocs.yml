@@ -29,6 +29,7 @@ theme:
 # Content Menu
 nav:
   - Primeiros Passos:
+    - Introdução: "primeiros-passos/introducao.md"
     - Comece a contribuir: "primeiros-passos/comece-contribuir.md"
   - Design & Arquitetura do Software:
     - Arquitetura: "design-arquitetura/arquitetura.md"
