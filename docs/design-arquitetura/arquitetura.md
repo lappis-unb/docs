@@ -8,5 +8,5 @@ O SIGE segue uma arquitetura em camadas, onde suas classes são organizadas em m
 4. App Mobile
 
 Essas camadas se comunicam de maneira hierarquíca, a figura abaixo deixa claro como é reptesentada essa comunicação entre as camadas, e também o que está relacionado internamente com cada camada:
- 
+
 ![Arquitetura](../assets/images/architecture_sige.png)
