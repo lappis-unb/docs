@@ -34,9 +34,10 @@ nav:
     - Arquitetura: "design-arquitetura/arquitetura.md"
     - SIGE-Slave: "design-arquitetura/slave.md"
     - SIGE-Master: "design-arquitetura/master.md"
-    - SIGE-Frontend: "design-arquitetura/frontend.md"
+    - SIGE-Frontend: "design-arquitetura/front-web.md"
     - SIGE-Mobile: "design-arquitetura/mobile.md"
     - Medidores: "design-arquitetura/medidores.md"
+  - Guia de estilo: "guia-de-estilo.md"
   - Tutoriais:
     - Como criar um novo documento: "tutoriais/novo-documento.md"
     - Como cadastrar um Transdutor e um Slave: "tutoriais/cadastrar-transdutor.md"
