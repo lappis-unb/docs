@@ -35,7 +35,7 @@ nav:
     - SIGE-Slave: "design-arquitetura/slave.md"
     - SIGE-Master: "design-arquitetura/master.md"
     - SIGE-Frontend: "design-arquitetura/frontend.md"
-    - SIGE-Mobile: "design-arquitetura/mobile.md"
+    - SIGE-Mobile: "design-arquitetura/front-mobile.md"
     - Medidores: "design-arquitetura/medidores.md"
   - Tutoriais:
     - Como criar um novo documento: "tutoriais/novo-documento.md"
