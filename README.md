@@ -1,7 +1,5 @@
 # SIGE - Sistema de Gestão Energética 
 
-[Documentação Online](https://lappis-unb.gitlab.io/projects/SMI/docs)
-
 ## O que é o SIGE?
 O Sistema de Gestão Energética - Universidade de Brasília (SIGE-UnB), consiste em uma aplicação web desenvolvida para auxiliar o monitoramento e gestão das instalações elétricas das edificações dos campi da Universidade de Brasília. A ideia visa que cada Campus contido na UnB possa ser capaz de utilizar a ferramenta e ter um maior conhecimento de como está o consumo de seus insumos importantes ao longo do tempo, possibilitando, assim, elaborar possíveis estratégias que auxiliem em sua economia.
 
@@ -71,14 +69,29 @@ Para saber mais sobre este módulo acesse [Mobile](./mobile/home)
 |:-------------------:|:----------------------------:|:--------------:| 
 |      Álax Alves     |     alaxallves@gmail.com     |   @alaxalves   |
 |    André de Sousa   |  andre.filho001@outlook.com  |  @andre-filho  |
+|	Andre Lucas de Sousa Pinto	|	andrelucax@gmail.com	|	-	|
 |     Arthur Assis    |    arthur120496@gmail.com    |  @arthur0496   |
+|	Arthur Diniz	|	arthurbdiniz@gmail.com	|	-	|
+|   Arthur Temporim   | - |@arthurTemporim|
+|	cleber	|	cjj.castro3@gmail.com	|	-	|
+|Durval Carvalho de Souza| - |@durval|
 | Ezequiel de Oliveira | ezequiel1de1oliveira@gmail.com | @EzequielDeOliveira | 
+|	Elias Bernardo	|	ebmm01@gmail.com	|	-	|
 | Gabriela Guedes | gabrielabguedes@gmail.com | @gabibguedes |
 |  Guilherme Augusto  | guilherme.francais@gmail.com |  @guiaugusto   |
+|Jessé Barreto| jesseh.barreto@gmail.com |@jesseh.barreto|
+|João Vitor Ramos| joaovytor0@gmail.com |@joaovitor3|
+|	Joberth Rogers	|	joberth.rogers18@gmail.com	|	-	|
+|Leonardo da Silva Gomes| - |@LeoSilvaGomes|
+|Lieverton Santos | - |@lievertom|
+|Lucas Machado Martins| - |@lucasmmachado|
 |    Lucas Martins    |  lucasamartins465@gmail.com  |  @lucasmartins |
+|	Luciano Santos	|	luciano_z7@hotmail.com	|	-	|
+|	Mateus Nóbrega	|	mateus@nobrega.dev	|	-	|
 | Renato Britto Araujo | renatobritto@protonmail.com | @renatoba |
 |    Rodrigo Maia     | contato@rodmaia.com.br | @rodmaia |
 |   Thalisson Melo    |   tallisonmelo@hotmail.com   | @thalissonmelo |
+
 
 ## Como subir 
 
