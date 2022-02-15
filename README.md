@@ -93,6 +93,7 @@ Para saber mais sobre este módulo acesse [Mobile](./mobile/home)
 |   Thalisson Melo    |   tallisonmelo@hotmail.com   | @thalissonmelo |
 
 
+
 ## Como subir 
 
 Para criar o network é necessário subir o ambiente do slave primeiro. Para subir cada um dos ambientes rode o comando abaixo em cada um dos repositórios:
