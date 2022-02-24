@@ -2,11 +2,10 @@
 
 #### Histórico de versão
 
-| Data       | Versão  | Descrição                                                 | Autor       |
-| ---------- | ------ | --------------------------------------------------------- | ----------- |
-| 09/02/2022 | 0.1    | Ajuste dos documento                                      | Matheus Estanislau |
-| 09/02/2022 | 1.0    | Adicionado item Tecnologias                                     | Matheus Estanislau |
-
+| Data       | Versão | Descrição                   | Autor              |
+| ---------- | ------ | --------------------------- | ------------------ |
+| 09/02/2022 | 0.1    | Ajuste dos documento        | Matheus Estanislau |
+| 09/02/2022 | 1.0    | Adicionado item Tecnologias | Matheus Estanislau |
 
 ### 1. Visão geral
 
@@ -61,7 +60,7 @@ O SIGE (Sistema de Gestão Energética da Universidade de Brasília) mobile tem 
 
 ### 3. Arquitetura
 
-![mvvm](./images/mvvm.png)
+![mvvm](../images/mvvm.png)
 
 Nós estamos utilizando Vue.js, uma biblioteca javascript que tem focado na camada [ViewModel](https://012.vuejs.org/guide/#ViewModel) do padrão MVVM. Ele conecta a View e a Model por meio de ligações de dados bidirecionais. As manipulações reais do DOM e a formatação de saída são abstraídas em diretivas e filtros.
 
@@ -79,5 +78,3 @@ Segundo o [wikipedia - quasar](https://en.wikipedia.org/wiki/Quasar_framework) Q
 #### 4.3. PWA
 
 Como é descrito no [wikipedia - PWA](https://en.m.wikipedia.org/wiki/Progressive_web_application) o PWA (progressive web application) consiste de um software de aplicativo que é distribuido pela web. Tendo como objetivo funcionar como esperado pelo desenvolvedor utilizando qualquer navegador compátivel com os padrões, seja desktop ou dispositivos móveis.
-
-
