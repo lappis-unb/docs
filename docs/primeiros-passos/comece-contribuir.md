@@ -8,8 +8,8 @@ Com o SIGE não é diferente. Para fazer uma contribuição ao projeto é necess
 
 Para se contribuir com o SIGE é necessário seguir as seguintes regras:
 
-1. Os commits devem estar em inglês.
-2. Os commits devem ser atômicos e significativos.
+1. Os commits devem estar em português.
+2. Os commits devem ser atômicos e significativos, seguindo o padrão especificado pelo [Conventional Commits](conventional-commits.md).
 3. O nome da branch em que a alteração será feita deve ter o nome da issue e uma breve descrição a respeito da issue.
 4. Quando der assign em uma issue, escreva um comentário dizendo que a mesma está sendo feita.
 5. Quando finalizar a issue e fizer o pull request, retorne nos comentários da issue e mencione que existe um pull request aberto para aquela issue.
