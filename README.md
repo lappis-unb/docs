@@ -33,7 +33,7 @@ As conexões com os _medidores_ são realizadas periodicamente:
 - **Quarterly** - A cada 15 minutos
 - **Monthly** - Mensalmente
 
-Para saber mais sobre este módulo acesse [Slave](./slave/home)
+Para saber mais sobre este módulo acesse [Slave](docs/design-arquitetura/slave.md)
 
 #### Medidores (Transducers)
 
@@ -41,7 +41,7 @@ Os _medidores de energia_ utilizados no projeto são multimedidores de mercado c
 
 ![Medidores de Energia](docs/assets/images/medidores.png)
 
-Para saber mais sobre os Medidores acesse [Medidores](./medidores/home)
+Para saber mais sobre os Medidores acesse [Medidores](docs/design-arquitetura/medidores.md)
 
 ### Servidor Central (sige-master)
 
@@ -52,19 +52,19 @@ As conexões do _Servidor Central_ com os _Servidores de Coleta_ são realizadas
 - A cada 1 minuto para atualizar o resumo de medidas e eventos;
 - A cada 1 hora para realizar a copia de todos os dados coletados dos medidores.
 
-Para saber mais sobre este módulo acesse [Master](./master/home)
+Para saber mais sobre este módulo acesse [Master](docs/design-arquitetura/master.md)
 
 ### Interface Gráfica WEB (sige-front)
 
 Apresenta dashboards para analisar os dados coletados pelos transdutores. Os dados do frontend são coletados a partir do _Servidor Central_.
 
-Para saber mais sobre este módulo acesse [FrontEnd](./frontend/home)
+Para saber mais sobre este módulo acesse [FrontEnd](docs/design-arquitetura/front-web.md)
 
 ### App Mobile - WPA (sige-mobile)
 
 O App mobile é a versão de frontend desenvolvida para o acesso rápido aos eventos (ocorrências), estado dos medidores e envio de notificações. Os dados do frontend são coletados a partir do _Servidor Central_.
 
-Para saber mais sobre este módulo acesse [Mobile](./mobile/home)
+Para saber mais sobre este módulo acesse [Mobile](docs/design-arquitetura/front-mobile.md)
 
 ### Coordenação do Projeto
 
@@ -109,9 +109,9 @@ E suba o ambiente que preferir com:
 docker-compose up
 ```
 
-Para ter a conexão do master com o slave é necessário cadastra-lo, para isso siga o seguinte [tutorial](./tutoriais/como-cadastrar-transdutor).
+Para ter a conexão do master com o slave é necessário cadastra-lo, para isso siga o seguinte [tutorial](docs/tutoriais/cadastrar-transdutor.md).
 
 ## Tutoriais
 
-- [Como cadastrar um Transdutor e um Slave](./tutoriais/como-cadastrar-transdutor)
-- [Como conectar com o Transdutor do Lappis](./tutoriais/conectar-transdutor-lappis)
+- [Como cadastrar um Transdutor e um Slave](docs/tutoriais/cadastrar-transdutor.md)
+- [Como conectar com o Transdutor do Lappis](docs/tutoriais/conectar-transdutor_lappis.md)
