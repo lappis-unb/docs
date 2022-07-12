@@ -14,7 +14,7 @@ copyright: "Copyright &copy; SIGE (GCES2021-1)"
 # Theme settings
 theme:
   logo: 'assets/images/SIGE_Logo.png'
-  favicon: 'assets/images/SIGE_Logo.png' 
+  favicon: 'assets/images/SIGE_Logo.png'
   font:
     text: "Roboto"
     code: "Roboto Mono"
@@ -37,7 +37,7 @@ nav:
     - Arquitetura: "design-arquitetura/arquitetura.md"
     - SIGE-Slave: "design-arquitetura/slave.md"
     - SIGE-Master: "design-arquitetura/master.md"
-    - SIGE-Frontend: "design-arquitetura/frontend.md"
+    - SIGE-Frontend: "design-arquitetura/front-web.md"
     - SIGE-Mobile: "design-arquitetura/front-mobile.md"
     - Medidores: "design-arquitetura/medidores.md"
   - Guia de estilo: "guia-de-estilo.md"
