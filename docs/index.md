@@ -51,12 +51,12 @@ Para saber mais sobre este módulo acesse [Master](design-arquitetura/master)
 ### Interface Gráfica WEB (sige-front)
 Apresenta dashboards para analisar os dados coletados pelos transdutores. Os dados do frontend são coletados a partir do *Servidor Central*.
 
-Para saber mais sobre este módulo acesse [Frontend](design-arquitetura/frontend)
+Para saber mais sobre este módulo acesse [Frontend](design-arquitetura/front-web)
 
 ### App Mobile - WPA (sige-mobile)
 O App mobile é a versão de frontend desenvolvida para o acesso rápido aos eventos (ocorrências), estado dos medidores e envio de notificações. Os dados do frontend são coletados a partir do *Servidor Central*.
 
-Para saber mais sobre este módulo acesse [Mobile](design-arquitetura/mobile)
+Para saber mais sobre este módulo acesse [Mobile](design-arquitetura/front-mobile)
 
 ### Coordenação do Projeto
 |        Membro       |            E-mail            |     GitLab     |
