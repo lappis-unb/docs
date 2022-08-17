@@ -12,7 +12,9 @@ Atualmente, a UnB e outras instituições de ensino superior do país somente po
 
 O SIGE se propõe a coletar dados sobre a qualidade energética de diversos locais da infraestrutura de rede, para assim possibilitar a caracterização de perfis de consumo de cada edifício, aplicação de metodologias de gestão de consumo individualizada, melhorias na continuidade do fornecimento de energia da rede interna da UnB, além de definição de metas de redução de consumo e demanda, por unidade acadêmica.
 
-## Arquitetura
+
+
+# Arquitetura
 
 A arquitetura do SIGE é composta por 4 camadas. Dois serviços de backend e dois de frontend conforme a imagem abaixo.
 ![Arquitetura](docs/assets/images/arquitetura_desenho.png)
@@ -22,6 +24,20 @@ A arquitetura do SIGE é composta por 4 camadas. Dois serviços de backend e doi
 - [VueJS](https://vuejs.org/) - Usado na implementação do frontend do projeto
 - [Django REST](https://www.django-rest-framework.org/) - Usado para implementar as APIs master e slave
 - [PostgreSQL](https://www.postgresql.org/) - Utilizado para o Banco de Dados do master e slave
+
+#### Medidores (Transducers)
+
+Os _medidores de energia_ utilizados no projeto são multimedidores de mercado com protocolo aberto que medem as grandezas elétricas essenciais em sistemas de gestão de energia. Dentre os protocolos de comunicação usados estão o Modbus RTU / Modbus TCP conectados via Ethernet.
+
+![Medidores de Energia](docs/assets/images/medidores.png)
+
+Para saber mais sobre os Medidores acesse [Medidores](docs/design-arquitetura/medidores.md)
+
+
+
+# Repositórios
+
+
 
 ### Servidor de Coleta de dados (sige-slave)
 
@@ -35,13 +51,7 @@ As conexões com os _medidores_ são realizadas periodicamente:
 
 Para saber mais sobre este módulo acesse [Slave](docs/design-arquitetura/slave.md)
 
-#### Medidores (Transducers)
 
-Os _medidores de energia_ utilizados no projeto são multimedidores de mercado com protocolo aberto que medem as grandezas elétricas essenciais em sistemas de gestão de energia. Dentre os protocolos de comunicação usados estão o Modbus RTU / Modbus TCP conectados via Ethernet.
-
-![Medidores de Energia](docs/assets/images/medidores.png)
-
-Para saber mais sobre os Medidores acesse [Medidores](docs/design-arquitetura/medidores.md)
 
 ### Servidor Central (sige-master)
 
@@ -54,17 +64,101 @@ As conexões do _Servidor Central_ com os _Servidores de Coleta_ são realizadas
 
 Para saber mais sobre este módulo acesse [Master](docs/design-arquitetura/master.md)
 
+
+
 ### Interface Gráfica WEB (sige-front)
 
 Apresenta dashboards para analisar os dados coletados pelos transdutores. Os dados do frontend são coletados a partir do _Servidor Central_.
 
 Para saber mais sobre este módulo acesse [FrontEnd](docs/design-arquitetura/front-web.md)
 
+
+
 ### App Mobile - WPA (sige-mobile)
 
 O App mobile é a versão de frontend desenvolvida para o acesso rápido aos eventos (ocorrências), estado dos medidores e envio de notificações. Os dados do frontend são coletados a partir do _Servidor Central_.
 
 Para saber mais sobre este módulo acesse [Mobile](docs/design-arquitetura/front-mobile.md)
+
+
+
+# Como contribuir
+
+
+
+## Branches
+
+As branches são criadas a partir de issues e devem seguir uma regra de nomenclatura.
+
+**nº-da-issue_nome-da-issue**
+
+### Exemplo:
+
+#### Issue
+
+![issue.png](./issue.png)
+
+#### Branche
+
+113_Refatorar-componente-Graph
+
+
+
+## Commits
+
+É recomendado fazer commits curtos porém funcionais e objetivos.
+
+### Co-autor
+
+Os co-autores devem ser adicionados ao final do commit da seguinte maneira:
+
+Co-authored-by: name <name@example.com>
+
+#### Exemplo
+
+Co-authored-by: João <joao@aluno.unb.br>
+
+
+
+## Merge requests
+
+É recomendado só dar o MR (Merge requests) assim que o código estiver todo desenvolvido e testado, pois após a submissão, caso entre na devel, a branche em questão deve ser fechada.
+
+
+
+## Subindo ambientes
+
+**Para criar o network é necessário subir o ambiente do slave primeiro.** 
+
+ Para subir cada um dos ambientes rode o comando abaixo em cada um dos repositórios:
+
+```sh
+docker-compose up
+```
+
+Se você não tem interesse em subir o ambiente do slave, basta criar um network para conectar com os outros ambientes, para isso rode o seguinte comando:
+
+```sh
+docker network create smi-network
+```
+
+E suba o ambiente que preferir com:
+
+```sh
+docker-compose up
+```
+
+Para ter a conexão do master com o slave é necessário cadastra-lo, para isso siga o seguinte [tutorial](docs/tutoriais/cadastrar-transdutor.md).
+
+
+
+## Tutoriais
+
+- [Como cadastrar um Transdutor e um Slave](docs/tutoriais/cadastrar-transdutor.md)
+- [Como conectar com o Transdutor do Lappis](docs/tutoriais/conectar-transdutor_lappis.md)
+
+
+# Contribuintes
 
 ### Coordenação do Projeto
 
@@ -88,30 +182,3 @@ Para saber mais sobre este módulo acesse [Mobile](docs/design-arquitetura/front
 | Renato Britto Araujo |  renatobritto@protonmail.com   |      @renatoba      |
 |     Rodrigo Maia     |     contato@rodmaia.com.br     |      @rodmaia       |
 |    Thalisson Melo    |    tallisonmelo@hotmail.com    |   @thalissonmelo    |
-
-## Como subir
-
-Para criar o network é necessário subir o ambiente do slave primeiro. Para subir cada um dos ambientes rode o comando abaixo em cada um dos repositórios:
-
-```sh
-docker-compose up
-```
-
-Se você não tem interesse em subir o ambiente do slave, basta criar um network para conectar com os outros ambientes, para isso rode o seguinte comando:
-
-```sh
-docker network create smi-network
-```
-
-E suba o ambiente que preferir com:
-
-```sh
-docker-compose up
-```
-
-Para ter a conexão do master com o slave é necessário cadastra-lo, para isso siga o seguinte [tutorial](docs/tutoriais/cadastrar-transdutor.md).
-
-## Tutoriais
-
-- [Como cadastrar um Transdutor e um Slave](docs/tutoriais/cadastrar-transdutor.md)
-- [Como conectar com o Transdutor do Lappis](docs/tutoriais/conectar-transdutor_lappis.md)
