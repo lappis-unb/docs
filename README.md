@@ -96,7 +96,7 @@ As branches são criadas a partir de issues e devem seguir uma regra de nomencla
 
 #### Issue
 
-![issue.png](./issue.png)
+![issue.png](./assets/images/issue.png)
 
 #### Branche
 
