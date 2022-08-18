@@ -92,7 +92,7 @@ As branches são criadas a partir de issues e devem seguir uma regra de nomencla
 
 **nº-da-issue_nome-da-issue**
 
-### Exemplo:
+#### Exemplo:
 
 #### Issue
 
@@ -108,7 +108,7 @@ As branches são criadas a partir de issues e devem seguir uma regra de nomencla
 
 É recomendado fazer commits curtos porém funcionais e objetivos.
 
-### Co-autor
+#### Co-autor
 
 Os co-autores devem ser adicionados ao final do commit da seguinte maneira:
 
