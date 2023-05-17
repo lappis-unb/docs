@@ -60,7 +60,7 @@ O SIGE (Sistema de Gestão Energética da Universidade de Brasília) mobile tem 
 
 ### 3. Arquitetura
 
-![mvvm](../images/mvvm.png)
+![mvvm](../assets/images/mvvm.png)
 
 Nós estamos utilizando Vue.js, uma biblioteca javascript que tem focado na camada [ViewModel](https://012.vuejs.org/guide/#ViewModel) do padrão MVVM. Ele conecta a View e a Model por meio de ligações de dados bidirecionais. As manipulações reais do DOM e a formatação de saída são abstraídas em diretivas e filtros.
 

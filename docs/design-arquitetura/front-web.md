@@ -69,7 +69,7 @@ O Sistema de Gestão Energética SIGE-UnB, desenvolvido pela Universidade de Bra
 
 Nós estamos utilizando `Vue.js`, uma biblioteca javascript que tem focado na camada [ViewModel](https://012.vuejs.org/guide/#ViewModel) do padrão MVVM. Ele conecta a View e a Model por meio de ligações de dados bidirecionais. As manipulações reais do DOM e a formatação de saída são abstraídas em `diretivas` e `filtros`.
 
-![mvvm](../images/mvvm.png)
+![mvvm](../assets/images/mvvm.png)
 
 ### 4. Tecnologias
 
