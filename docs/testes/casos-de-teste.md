@@ -2,11 +2,6 @@
 
 ## Mapeamento das principais funcionalidades <a name="feature-mapping"></a>
 
-## Trabalho no Docs <a name="docs-work"></a>
-
-- Documente todos os cenários e casos de teste.
-- Mantenha a documentação atualizada à medida que novos casos de teste são adicionados.
-
 ## Casos de teste mapeados <a name="mapped-test-cases"></a>
 
 ### 1. Tela de cadastro
