@@ -45,7 +45,8 @@ nav:
     - Como criar um novo documento: "tutoriais/novo-documento.md"
     - Como cadastrar um Transdutor e um Slave: "tutoriais/cadastrar-transdutor.md"
     - Como conectar com o Transdutor do Lappis: "tutoriais/conectar-transdutor-lappis.md"
-
+  - Casos de teste: 
+    - Testes automatizados: "testes/casos-de-teste.md"
 # Style
 # extra_css:
 #   - assets/style/extra.css
