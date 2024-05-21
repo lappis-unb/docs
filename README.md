@@ -111,6 +111,30 @@ docker-compose up
 
 Para ter a conexão do master com o slave é necessário cadastra-lo, para isso siga o seguinte [tutorial](docs/tutoriais/cadastrar-transdutor.md).
 
+### Atenção às Versões do Docker Compose
+
+Em alguns casos, ao utilizar o Docker Compose na versão 2.x (onde 'x' pode ser qualquer subversão do Docker 2.0), você pode encontrar o seguinte erro ao executar o comando docker-compose up:
+
+```sh
+ERROR: Version in "./docker-compose.yml" is unsupported. You might be seeing this error because you're using the wrong Compose file version. Either specify a supported version (e.g "2.2" or "3.3") and place your service definitions under the `services` key, or omit the `version` key and place your service definitions at the root of the file to use version 1. For more on the Compose file format versions, see https://docs.docker.com/compose/compose-file/
+```
+
+#### Solução
+
+Para evitar esse erro, siga estas orientações:
+
+1. **Verifique a Versão do Docker Compose**: Utilize o comando abaixo para verificar a versão do Docker Compose instalada:
+
+```sh
+docker-compose -v
+```
+
+2. **Ajuste o Comando Conforme a Versão**: Se você está usando uma versão do Docker Compose diferente de 2.2 ou 3.3, utilize o comando sem o hífen:
+
+```sh
+docker compose up
+```
+
 ## Tutoriais
 
 - [Como cadastrar um Transdutor e um Slave](docs/tutoriais/cadastrar-transdutor.md)
